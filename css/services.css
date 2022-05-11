@@ -1,0 +1,111 @@
+body {
+    background-image: url('/images/bg-texture.png');
+}
+
+.mainbox {
+   color: var(--color-white);
+   padding: 2rem;
+   /* border: 1px solid rgba(255, 255, 255, 0.3); */
+   margin: 2rem auto;
+   /* box-shadow: -5px -5px 10px var(--color-bg-variant), 5px 5px 15px var(--color-bg-variant); */
+   border-radius: 1rem;
+   
+  transition: var(--transition);
+  cursor: pointer;
+  
+ 
+  
+}
+
+
+#services {
+    padding: 3rem 0 0;
+}
+
+
+
+.services__container h4 {
+    color: var(--color-primary1);
+    padding-bottom: 1.25rem;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 0.8rem;
+    
+}
+
+.services__card {
+    background: var(--color-primary-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+
+}
+
+.services__card:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+    
+}
+
+.services__icon {
+    color: var(--color-primary);
+    font-size: 1.50rem;
+    padding: 1rem 0 0.5rem
+
+}
+
+.services__card h5{
+    padding-bottom: 1.2rem ;
+}
+
+
+#empservices {
+    background: var(--color-bg);
+    background-image: url('/images/bg-texture.png');
+    height: 30rem;
+}
+
+.empcards {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 0.8rem;
+    
+}
+
+.empcard {
+    background: var(--color-bg-variant);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.empcard:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+}
+
+.empcard h5{
+    padding-bottom: 1.2rem ;
+}
+
+
+.empsevices__container h4 {
+    color: var(--color-primary1);
+    padding-bottom: 1.25rem;
+}

@@ -1,0 +1,142 @@
+#infra {
+    background-image: url('../images/bg-texture.png');    
+    text-align: center;
+    
+}
+.infra__container {
+    color: var(--color-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.infra__options {
+    
+    padding: 2rem;
+    border-radius: 10px;
+    transition: var(--transition);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* row-gap: 0.2rem; */
+    gap: 0.8rem;
+
+}
+
+.infra__options li {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem 0.2rem ;
+    transition: var(--transition);
+    cursor: pointer;
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+.infra__options li::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    right: 1rem;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: rotate(135deg);
+    transition: var(--transition);
+}
+
+.infra__options li:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary1);
+}
+
+
+
+.infra__options .infra__icon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-top: 6px;
+    color: var(--color-primary1);
+}
+
+.infra__options a {
+    color: var(--color-light);
+    font-weight: 400;
+}
+
+
+#example {
+    background: var(--color-bg-variant);
+    min-height: 50rem;
+}
+
+
+.infra__right {
+    background: transparent;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid var(--color-primary1); */
+    box-shadow: -1px -1px 2px var(--color-primary), 1px 1px 2px var(--color-primary);
+    /* border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem; */
+}
+
+.infra__right:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+}
+
+.infra__details {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.mytable {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.mytable:nth-child(2) {
+   background: var(--color-bg);
+   color: var(--color-light);
+}
+
+
+.mytable .particular, .good, .minor, .major {
+   
+    padding: 0.2rem;
+    margin-bottom: 0.rem;
+    font-size: 1rem;
+
+}
+
+
+.header:nth-child(2) {
+    color: var(--color-primary1);
+}
+
+.mytable .particular{
+   text-align: start;  
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.mytable .particular ion-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+
+
+}
